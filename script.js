@@ -3,13 +3,13 @@ $(function () {
   // displays the current day in the currentDay id
   var today = dayjs()
   $("#currentDay").text(today.format("MMM D, YYYY"))
-  // calls the changeColor function
+  // calling the functions
   changeColor()
   saveText()
   displayText()
-
 });
 
+// finction to change color of blocks depending on time
 function changeColor() {
 
   // get the current hour
